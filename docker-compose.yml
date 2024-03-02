@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  next-drizzle-db:
+    image: postgres
+    restart: always
+    container_name: next-drizzle-db
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: nextDrizzle
+      POSTGRES_USER: userNextDrizzle
+      POSTGRES_PASSWORD: passwordNextDrizzle
+      PGPORT: 5432
+      SCHEMA_NAME: public
+      PGDATA: /data/postgres
+    volumes:
+      - postgres:/data/postgres
+
+volumes:
+  postgres:
+    name: next-drizzle-postgres
