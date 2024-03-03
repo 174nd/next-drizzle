@@ -7,9 +7,10 @@ async function main() {
   await db.delete(users);
 
   await db.insert(users).values({
-    email: "foo@example.com",
-    image: "some image url",
-    name: "foo",
+    email    : "admin@admin.com",
+    password : "admin",
+    image    : "some image url",
+    name     : "admin",
   });
 
   

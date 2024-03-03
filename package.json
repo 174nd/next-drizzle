@@ -16,6 +16,7 @@
   "dependencies": {
     "@vercel/postgres": "^0.7.2",
     "drizzle-orm": "^0.29.4",
+    "jose": "^5.2.2",
     "next": "14.1.1",
     "pg": "^8.11.3",
     "postgres": "^3.4.3",
